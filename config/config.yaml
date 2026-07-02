@@ -1,0 +1,35 @@
+# config/config.yaml
+data:
+  avro_root: "${DATA_ROOT}"
+  metadata_path: "${METADATA_PATH}"
+  borg_csv: "self_reported_fatigue_level.csv"
+  session_json: "session_metadata.json"
+  demographics_csv: "demographics.csv"
+
+sampling_rates:
+  accelerometer: 64
+  bvp: 64
+  eda: 4
+  steps: 0.2
+  temperature: 1
+
+filters:
+  moving_average:
+    window_sec: 0.5
+  bandpass:
+    low_hz: 0.5
+    high_hz: 30.0
+    order: 4
+  lowpass:
+    cutoff_hz: 5.0
+    order: 4
+  hampel:
+    window_size: 5
+    k_sigma: 1.4826
+
+figures:
+  dpi: 300
+  output_dir: "figures"
+  format: "png"
+  single_col_width_mm: 89
+  double_col_width_mm: 183
