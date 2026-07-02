@@ -38,7 +38,7 @@ def load_contextual_sensing_data(file_path: Union[str, Path]) -> pd.DataFrame:
     pd.DataFrame
         DataFrame with timestamp index and 22 sensor columns:
         - time: ISO 8601 timestamp (converted to datetime index)
-        - gFx, gFy, gFz: Gravity force vector components (m/s²)
+        - gFx, gFy, gFz: Gravity force vector components (g, i.e. multiples of 9.80665 m/s² — includes gravity, unlike ax/ay/az)
         - ax, ay, az: Linear acceleration (m/s²)
         - wx, wy, wz: Angular velocity from gyroscope (rad/s)
         - P(Pa): Barometric pressure (Pascals)
