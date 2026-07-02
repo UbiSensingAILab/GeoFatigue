@@ -4,8 +4,7 @@ round-trip position axis within each lap.
 
 A "lap" is a closed there-and-back trip: from the task's fixed lap-start
 point (an extremity of the centerline, see TASK_START_DIRECTION) away to the
-turnaround point and back. See docs/superpowers/specs/
-2026-06-22-elevation-physiology-composite-figure-design.md section 2.
+turnaround point and back. 
 """
 from typing import List, Tuple
 

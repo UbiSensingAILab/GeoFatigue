@@ -4,9 +4,7 @@ outbound+inbound legs into one 0-100% round-trip position axis (see
 geofatigue.features.lap_segmentation), resamples elevation (from the lap's
 own GPS trajectory) and per-minute baseline-z-scored EDA/pulse (matched by
 timestamp) onto a shared 100-point grid, then averages across a
-participant's own laps. Also computes the figure's caption statistics --
-see docs/superpowers/specs/
-2026-06-22-elevation-physiology-composite-figure-design.md section 4.
+participant's own laps. 
 """
 from typing import Dict, List
 
